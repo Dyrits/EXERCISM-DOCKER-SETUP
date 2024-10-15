@@ -11,26 +11,28 @@ This repository contains a Docker setup for running the Exercism CLI tool. It in
 
 ## Setup
 
-1. Clone the repository:
+- Clone the repository:
  ```sh
  git clone git@github.com:Dyrits/EXERCISM-DOCKER-SETUP.git ./exercism
  cd ./exercism
  ```
 
-2. Create a `.env` file in the root directory with your Exercism token:
+- Create a `.env` file in the root directory with your Exercism token:
  ```sh
  echo "EXERCISM_TOKEN=<YOUR_EXERCISM_TOKEN>" >  .env
  ```
 
-3. Build the image, run the container and open the shell (from the container):
+- Build the image and run the container using the script:
  ```sh 
  sh ./exercism.sh
  ```
 
-An alternative way is to use Docker Compose to build the image, run the container and open the shell (from the container):
+Build the image and run the container using Docker Compose:
 ```sh
 docker-compose run exercism
 ```
+
+It will directly put you inside the container (in a shell) with the Exercism CLI tool installed.
 
 ## Usage
 
