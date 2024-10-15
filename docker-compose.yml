@@ -1,0 +1,10 @@
+services:
+  exercism:
+    build: ./
+    image: exercism:3.5.2
+    env_file: .env
+    volumes:
+      - ./:/root/exercism
+    command: /bin/sh -c "exercism configure --token=$EXERCISM_TOKEN --workspace=/root/exercism && cd /root/exercism && /bin/sh"
+    stdin_open: true
+    tty: true
