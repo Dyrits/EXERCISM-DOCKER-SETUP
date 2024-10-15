@@ -6,7 +6,7 @@ RUN curl -L https://github.com/exercism/cli/releases/download/v3.5.2/exercism-3.
 
 RUN mkdir -p /root/bin \
     && mv exercism /root/bin \
-    && echo 'export PATH=/root/bin:$PATH' >> /root/.bash_profile
+    && echo 'export PATH=/root/bin:$PATH' >> /root/.profile
 
 # Ensure the PATH is set correctly
 ENV PATH="/root/bin:${PATH}"
