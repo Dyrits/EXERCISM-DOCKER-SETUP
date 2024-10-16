@@ -1,6 +1,6 @@
 # Exercism Docker Setup
 
-This repository contains a Docker setup for running the Exercism CLI tool. It includes a `Dockerfile` to build the Docker image and a script to run the container with the necessary configuration.
+This repository contains a Docker setup for running the Exercism CLI tool. It includes a `Dockerfile` to build the Docker image and a Docker Compose file to run the container with the necessary configuration.
 
 > Why ? The idea is to have a clean and isolated environment to run the Exercism CLI tool without installing it on your system. It also allows you to run the tool on any system that has Docker installed.
 
@@ -22,12 +22,7 @@ This repository contains a Docker setup for running the Exercism CLI tool. It in
  echo "EXERCISM_TOKEN=<YOUR_EXERCISM_TOKEN>" >  .env
  ```
 
-- Build the image and run the container using the script:
- ```sh 
- sh ./exercism.sh
- ```
-
-Build the image and run the container using Docker Compose:
+- Build the image and run the container using Docker Compose:
 ```sh
 docker-compose run exercism
 ```
